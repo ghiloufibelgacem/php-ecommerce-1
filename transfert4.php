@@ -1,0 +1,12 @@
+<?php
+session_start();
+	if(isset($_GET['catg']))
+	{
+		$_SESSION['now']=$_GET['catg'];
+		header('Location:bynow.php');
+	}
+	else
+	{
+		header('Location:index.php');
+	}
+?>

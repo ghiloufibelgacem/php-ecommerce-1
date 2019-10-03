@@ -1,0 +1,13 @@
+<?php
+	session_start();
+	if(isset($_GET['id']))
+	{
+	  $id=$_GET['id'];
+	  $_SESSION['id']=$id;
+      header('Location:modifier2.php');
+	}
+	else
+	{
+		header('Location:del.php');
+	}
+?>

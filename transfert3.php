@@ -1,0 +1,14 @@
+<?php
+session_start();
+$array=$_SESSION['panier'];
+if(isset($_GET['id']))
+	{
+		$key=array_search($_GET['id'],$array);
+		unset($_SESSION['panier'][$key]);
+		header('Location:panier.php');
+	}
+else
+{
+	header('Location:index.php');
+}
+?>

@@ -1,0 +1,12 @@
+<?php
+session_start();
+	if(isset($_GET['catg']))
+	{
+		$_SESSION['catg']=$_GET['catg'];
+		header('Location:category.php');
+	}
+	else
+	{
+		header('Location:index.php');
+	}
+?>

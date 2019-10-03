@@ -1,0 +1,50 @@
+#commande{
+	width: 700px;
+	margin: 0px auto;
+	border:groove;
+	border-color:#00CCFF;
+}
+#Name.blue,.b1
+{
+    font-size: 34px;
+  	padding-top:48px;
+    color: #0e88af;
+}
+.blue
+{
+	color: #0e88af;
+}
+#bon
+{
+	background:#00CCFF;
+	height:60px;
+	width:600px;
+	font-size:20px;
+	text-align: center;
+	color: white;
+}
+#table{
+	border-collapse: collapse;
+}
+#table td,th
+{
+	border: 1px solid black;
+	width:80px;
+}
+#d
+{
+	width:200px;
+}
+#livraison
+{
+	border:1px solid black;
+	width:600px;
+	height:150px;
+	margin-left:10px;
+	margin-bottom: 10px; 
+}
+
+#livraison span
+{
+font-size:18px;
+}

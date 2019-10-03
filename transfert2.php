@@ -1,0 +1,24 @@
+<?php
+session_start();
+if(isset($_SESSION['user']))
+{
+	if(isset($_GET['catg']))
+	{
+		if(in_array($_GET['catg'],$_SESSION['panier']))
+		{
+			header('Location:category.php');
+		}
+		else
+		{
+				
+		$_SESSION['panier'][]=$_GET['catg'];
+		header('Location:category.php');
+		//var_dump($_SESSION['panier']);
+		}
+	}
+}
+else
+{
+	header('Location:login.php');
+}
+?>
